@@ -1,0 +1,17 @@
+<!-- <div *ngIf="playlist"> -->
+  <h2>Create a new playlist</h2>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="playlist.name" placeholder="name" size="40" />
+  </div>
+  <div>
+    <label>artists: </label>
+    <input [(ngModel)]="playlist.artist" placeholder="artists" size="100"/>
+  </div>
+  <div>
+    <label>token: </label>
+    <input [(ngModel)]="playlist.token" placeholder="token" size="200" />
+  </div>
+  <!-- <button (click)="goBack()">Back</button> -->
+  <button (click)="create()">Create</button>
+<!-- </div> -->

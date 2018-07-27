@@ -1,0 +1,8 @@
+<h2>My Playlists</h2>
+<ul class="playlists">
+  <li *ngFor="let playlist of playlists">
+    <span class="badge">{{playlist.id}}</span> {{playlist.name}}
+  </li>
+</ul>
+
+<div class="error" *ngIf="error">{{error}}</div>
